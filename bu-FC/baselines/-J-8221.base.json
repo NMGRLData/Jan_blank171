@@ -1,0 +1,62 @@
+{
+    "AX": {
+        "error": 0.005006073181893618, 
+        "filter_outliers_dict": {
+            "filter_outliers": true, 
+            "iterations": 1, 
+            "std_devs": 2
+        }, 
+        "fit": "average", 
+        "value": -0.04209926491818598
+    }, 
+    "CDD": {
+        "error": 2.1231078277164003e-06, 
+        "filter_outliers_dict": {
+            "filter_outliers": true, 
+            "iterations": 1, 
+            "std_devs": 10
+        }, 
+        "fit": "average", 
+        "value": 3.70862762275145e-06
+    }, 
+    "H1": {
+        "error": 0.0038054460393457707, 
+        "filter_outliers_dict": {
+            "filter_outliers": true, 
+            "iterations": 1, 
+            "std_devs": 2
+        }, 
+        "fit": "average", 
+        "value": 0.0710692202908583
+    }, 
+    "H2": {
+        "error": 0.002786840832249036, 
+        "filter_outliers_dict": {
+            "filter_outliers": true, 
+            "iterations": 1, 
+            "std_devs": 2
+        }, 
+        "fit": "average", 
+        "value": -0.10186471901078142
+    }, 
+    "L1": {
+        "error": 0.0017479736616785454, 
+        "filter_outliers_dict": {
+            "filter_outliers": true, 
+            "iterations": 1, 
+            "std_devs": 2
+        }, 
+        "fit": "average", 
+        "value": -0.036478518604651344
+    }, 
+    "L2": {
+        "error": 0.004146624746964659, 
+        "filter_outliers_dict": {
+            "filter_outliers": true, 
+            "iterations": 1, 
+            "std_devs": 2
+        }, 
+        "fit": "average", 
+        "value": -0.009972814596798114
+    }
+}
