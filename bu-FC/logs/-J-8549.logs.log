@@ -4,14 +4,14 @@ loading script "jan_pump_ms.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=539.8, duration=0.000230073928833
+executed snippet estimated_duration=539.8, duration=0.000235795974731
 script duration name:unknown400_120 seconds:540.0
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=8.51154327393e-05
+executed snippet estimated_duration=0, duration=2.47955322266e-05
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
 loading script "jan_pump_extraction_line.py"
@@ -23,18 +23,18 @@ no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.00015115737915
-executed snippet estimated_duration=4.0, duration=0.00140309333801
+executed snippet estimated_duration=4.0, duration=0.0001540184021
+executed snippet estimated_duration=4.0, duration=0.00168991088867
 Script duration 540.0
 Run total estimated duration= 541.000
 run duration: 0:09:01
 doing event level: 2
-09:44:30 -- Setting default integration. t=1.048576
+09:45:36 -- Setting default integration. t=1.048576
 setting integration time = 1.048576
 SetIntegrationTime 1.048576 ===>> OK
 ----------------- start -----------------
 **************** Experiment Type: Ar/Ar, Ar/Ar
-close session 4949175184
+close session 4960594832
 $$$$$ Clearing conditionals
 adding conditionals 
 Add queue conditionals
@@ -50,28 +50,28 @@ $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/jan/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-09:44:30 -- ******* Pre Extraction Check *******
+09:45:36 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.36246,0.08744,0.11250,-0.01809,-0.03302,0.00119
-09:44:30 -- testing system defined conditionals
+Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.20773,0.00890,0.10674,-0.02199,0.02565,0.00089
+09:45:36 -- testing system defined conditionals
 Checking default pre extraction terminations n=2
 testing CDD
 evaluate ot="CDD.inactive" t="CDD", ctx="{'CDD': False}"
 GetDeflection CDD ===>> 50
 testing CDD==2000
 evaluate ot="CDD.deflection==2000" t="CDD==2000", ctx="{'CDD': 50.0}"
-09:44:30 -- ******* Pre Extraction Check Passed *******
+09:45:36 -- ******* Pre Extraction Check Passed *******
 =================================================================================
-09:44:30 -- stopping status monitor. block=True
-stop 4947298928
+09:45:36 -- stopping status monitor. block=True
+stop 4948605552
 Status monitor stopped
 Status monitor finished
-09:44:31 -- starting status monitor
-start 4947298928
+09:45:38 -- starting status monitor
+start 4948605552
 StatusMonitor period=1. Frequencies(state=2, checksum=3, lock=5, owner=5)
 start extraction
 no extraction script
-09:44:33 -- Sending spectrometer configuration
+09:45:39 -- Sending spectrometer configuration
 ======== Sending configuration ========
 SetDeflection CDD,50.0 ===>> OK
 SetDeflection H2,0.0 ===>> OK
@@ -106,13 +106,13 @@ get initial guess parabolic
 ======== Configuration Finished ========
 GetYSymmetry ===>> -2.81
 GetZSymmetry ===>> -50.72
-GetParameter Trap Current Readback ===>> 198.035158395898
+GetParameter Trap Current Readback ===>> 197.699505585058
 GetHighVoltage ===>> 4500
 start measurement
 do measurement
 L#=bu-FC-J analysis type=blank_unknown
 Measurement Started jan_unknown400_120.py
-09:44:33 -- ******* Measurement Started jan_unknown400_120.py *******
+09:45:39 -- ******* Measurement Started jan_unknown400_120.py *******
 state changed from not run to measurement
 setting trap, emission, spec, defl, and gains
 GetExtractionLens ===>> 26.13
@@ -131,14 +131,14 @@ GetGain AX ===>> 0.09645
 GetGain L1 ===>> 0.010309
 GetGain L2 ===>> 0.091218
 GetGain CDD ===>> 0
-GetParameter Trap Current Readback ===>> 198.258926936459
-GetParameter Source Current Readback ===>> 552.658182262101
+GetParameter Trap Current Readback ===>> 197.811389855338
+GetParameter Source Current Readback ===>> 551.928279313923
 pre measurement save
-New frame /Users/jan/Pychron/data/isotopes/46/d189b4-4f67-4853-8777-c33de2e4332c.h5
-flush and close file /Users/jan/Pychron/data/isotopes/46/d189b4-4f67-4853-8777-c33de2e4332c.h5
+New frame /Users/jan/Pychron/data/isotopes/39/babcd5-d84f-4397-8ad6-874a3e59ea1c.h5
+flush and close file /Users/jan/Pychron/data/isotopes/39/babcd5-d84f-4397-8ad6-874a3e59ea1c.h5
 testing...
 no interpolation path defined
-executed snippet estimated_duration=555.4, duration=0.00018310546875
+executed snippet estimated_duration=555.4, duration=0.000428915023804
 unknown measurement script
 activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2', 'CDD') {}
 activate detectors
@@ -192,39 +192,37 @@ _execute: Traceback (most recent call last):
   File "/Users/jan/.pychron.0/updates/pychron/experiment/automated_run/automated_run.py", line 269, in py_position_magnet
     self._set_magnet_position(pos, detector, use_dac=use_dac)
   File "/Users/jan/.pychron.0/updates/pychron/experiment/automated_run/automated_run.py", line 2111, in _set_magnet_position
-    for name, items in groupby(sorted(self.isotope_group.isotope.items(), key=key), key=key):
-  File "/Users/jan/.pychron.0/updates/pychron/processing/isotope_group.py", line 371, in __getattr__
-    raise AttributeError(attr)
-AttributeError: isotope
+    for name, items in groupby(sorted(self.isotope_group.isotopes.items(), key=key), key=key):
+TypeError: key() takes exactly 2 arguments (1 given)
 
 Post Equilibration Started jan_pump_extraction_line.py
 Post Measurement Started jan_pump_ms.py
-09:44:34 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
-09:44:34 -- ******* Post Measurement Started jan_pump_ms.py *******
+09:45:40 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
+09:45:40 -- ******* Post Measurement Started jan_pump_ms.py *******
 testing...
 testing...
 no interpolation path defined
 no interpolation path defined
+executed snippet estimated_duration=0, duration=3.19480895996e-05
 calculate duration
-executed snippet estimated_duration=0, duration=3.60012054443e-05
-testing...
 Pumping spectrometer
+testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.000187873840332
 open () {'name': 'O'}
-executed snippet estimated_duration=4.0, duration=0.00328183174133
+executed snippet estimated_duration=4.0, duration=0.000168085098267
 open name=O desc=---
+executed snippet estimated_duration=4.0, duration=0.00267291069031
 Pump after analysis
 doing GOSUB
-testing...
 checking ownership. requestor=192.168.2.150
-no interpolation path defined
 check software interlocks O
-executed snippet estimated_duration=4.0, duration=0.000181913375854
 interlocks []
-Pump Microbone
+testing...
 actuate state mode=None-script, software_lock=False
+no interpolation path defined
 doing actuation None-script open_channel False
+executed snippet estimated_duration=4.0, duration=0.000241994857788
+Pump Microbone
 close () {'description': 'Jan Inlet'}
 close name=--- desc=Jan Inlet
 checking ownership. requestor=192.168.2.150
@@ -234,43 +232,43 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 Open O ===>> OK
 Close R ===>> OK
-update labels <pychron.experiment.plot_panel.PlotPanel object at 0x12c521b90>
-update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x1339af530>"
-setting label 0 H2 Ar41
-setting label 1 H1 Ar40
-setting label 2 AX Ar39
-setting label 3 L1 Ar38
-setting label 4 L2 Ar37
-setting label 5 CDD Ar36
-update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x133987cb0>"
-setting label 0 H2 Ar41
-setting label 1 H1 Ar40
-setting label 2 AX Ar39
-setting label 3 L1 Ar38
-setting label 4 L2 Ar37
-setting label 5 CDD Ar36
 GetIndicatorState O ===>> OK
 change switch state (True, True)
-09:44:34 -- OPEN   VALVE-O (Jan Ion Pump)
+09:45:40 -- OPEN   VALVE-O (Jan Ion Pump)
 -------------------------- open O () result=[(True, True)]
 GetIndicatorState R ===>> False
 change switch state (True, True)
-09:44:34 -- CLOSE  VALVE-R (Jan Inlet)
+09:45:40 -- CLOSE  VALVE-R (Jan Inlet)
 -------------------------- close None (Jan Inlet) result=[(True, True)]
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x12c4dd530>
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x133f32590>"
+setting label 0 H2 Ar41
+setting label 1 H1 Ar40
+setting label 2 AX Ar39
+setting label 3 L1 Ar38
+setting label 4 L2 Ar37
+setting label 5 CDD Ar36
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x133ee5d10>"
+setting label 0 H2 Ar41
+setting label 1 H1 Ar40
+setting label 2 AX Ar39
+setting label 3 L1 Ar38
+setting label 4 L2 Ar37
+setting label 5 CDD Ar36
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=0.716099023819
+executed snippet estimated_duration=0, duration=0.676907062531
 jan_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-09:44:34 -- ******* Post Measurement Finished *******
+09:45:41 -- ******* Post Measurement Finished *******
 ----------------- finish -----------------
 state changed from measurement to failed
 ----------------- stop -----------------
 Measurement Finished unsuccessfully. Aborted=False
-09:44:34 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
+09:45:41 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
 failed execution step Measurement Failed
 measurement did not complete successfully
-09:44:34 -- Automated run bu-FC-J-8549 failed duration: 4.782 s
+09:45:41 -- Automated run bu-FC-J-8549 failed duration: 4.575 s
 ----------------- finish -----------------
 ----------------- stop -----------------
 finish run. runs completed=1
