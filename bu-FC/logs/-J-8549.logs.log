@@ -1,56 +1,40 @@
 do run
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
-loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=539.8, duration=0.000200986862183
+executed snippet estimated_duration=539.8, duration=0.000195980072021
 script duration name:unknown400_120 seconds:540.0
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
-loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=2.31266021729e-05
+executed snippet estimated_duration=0, duration=4.31537628174e-05
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
-loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
-testing...
-no interpolation path defined
-calculate duration
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=7.39097595215e-05
-calculate duration
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=0.000106811523438
-executed snippet estimated_duration=0.0, duration=0.00229287147522
-script duration name:co2 seconds:0.0
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
-loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.000142097473145
-executed snippet estimated_duration=4.0, duration=0.0011670589447
+executed snippet estimated_duration=4.0, duration=0.00019097328186
+executed snippet estimated_duration=4.0, duration=0.00161600112915
 Script duration 540.0
 Run total estimated duration= 541.000
 run duration: 0:09:01
 doing event level: 2
-22:37:15 -- Setting default integration. t=1.048576
+09:39:24 -- Setting default integration. t=1.048576
 setting integration time = 1.048576
 SetIntegrationTime 1.048576 ===>> OK
 ----------------- start -----------------
 **************** Experiment Type: Ar/Ar, Ar/Ar
-close session 4949679856
+close session 4950752144
 $$$$$ Clearing conditionals
 adding conditionals 
 Add queue conditionals
@@ -59,272 +43,35 @@ adding default conditionals from /Users/jan/Pychron/setupfiles/spectrometer/defa
 Start automated run bu-FC-J-8549
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
-loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 %%%%%%%%%%%%%%%%%% setting automated run bu-FC-J-8549
-No value "sensitivity_multiplier" in metadata
 $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 ============================= Pre Extraction Check =============================
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/jan/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-22:37:15 -- ******* Pre Extraction Check *******
+09:39:24 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.02332,0.05135,0.24139,-0.03185,0.08135,0.00178
-22:37:15 -- testing system defined conditionals
+Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.23589,0.10774,0.14209,-0.01973,0.03279,0.00193
+09:39:24 -- testing system defined conditionals
 Checking default pre extraction terminations n=2
 testing CDD
 evaluate ot="CDD.inactive" t="CDD", ctx="{'CDD': False}"
 GetDeflection CDD ===>> 50
 testing CDD==2000
 evaluate ot="CDD.deflection==2000" t="CDD==2000", ctx="{'CDD': 50.0}"
-22:37:15 -- ******* Pre Extraction Check Passed *******
+09:39:24 -- ******* Pre Extraction Check Passed *******
 =================================================================================
-22:37:15 -- stopping status monitor. block=True
-stop 4946800080
+09:39:24 -- stopping status monitor. block=True
+stop 4946397808
 Status monitor stopped
 Status monitor finished
-22:37:17 -- starting status monitor
-start 4946800080
+09:39:25 -- starting status monitor
+start 4946397808
 StatusMonitor period=1. Frequencies(state=2, checksum=3, lock=5, owner=5)
 start extraction
-do extraction
-Analysis started at 22:37:18.884464
-Extraction Started jan_co2.py
-22:37:18 -- ******* Extraction Started jan_co2.py *******
-state changed from not run to extraction
-DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x12deff710>
-testing...
-no interpolation path defined
-calculate duration
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=4.72068786621e-05
-calculate duration
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=8.79764556885e-05
-executed snippet estimated_duration=120.0, duration=0.00173997879028
-Jan CO2 laser analysis
-doing GOSUB
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=3.69548797607e-05
-Waiting for CO2 access
-wait ('FelixCO2Flag', 0) {}
-waiting for FelixCO2Flag = 0
-Read FelixCO2Flag ===>> 0
-finished waiting
-CO2 free
-wait ('CO2PumpTimeFlag', 0) {}
-waiting for CO2PumpTimeFlag = 0
-Read CO2PumpTimeFlag ===>> 0
-finished waiting
-acquire ('JanCO2Flag',) {'clear': True}
-acquire JanCO2Flag
-Set JanCO2Flag 1 ===>> OK
-JanCO2Flag acquired
-set extraction state False (0.75, 'red', 1.5)
-CO2 acquired
-executed snippet estimated_duration=0, duration=0.0168211460114
-WaitForCO2Access.py completed successfully
-gosub finished
-doing GOSUB
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=0.000105857849121
-Prepare for CO2 analysis
-close () {'description': 'Jan Inlet'}
-close name=--- desc=Jan Inlet
-checking ownership. requestor=192.168.2.150
-check software interlocks R
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script close_channel False
-Close R ===>> OK
-GetIndicatorState R ===>> False
-change switch state (True, True)
-22:37:19 -- CLOSE  VALVE-R (Jan Inlet)
--------------------------- close None (Jan Inlet) result=[(True, True)]
-action=close, ok=True, locked=[False]
-open () {'description': 'Jan Ion Pump'}
-open name=--- desc=Jan Ion Pump
-checking ownership. requestor=192.168.2.150
-check software interlocks O
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel False
-Open O ===>> OK
-GetIndicatorState O ===>> OK
-change switch state (True, True)
-22:37:19 -- OPEN   VALVE-O (Jan Ion Pump)
--------------------------- open None (Jan Ion Pump) result=[(True, True)]
-action=open, ok=True, locked=[False]
-close () {'description': 'Microbone to Minibone'}
-close name=--- desc=Microbone to Minibone
-checking ownership. requestor=192.168.2.150
-check software interlocks L
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script close_channel False
-Close L ===>> OK
-GetIndicatorState L ===>> False
-change switch state (True, True)
-22:37:20 -- CLOSE  VALVE-L (Microbone to Minibone)
--------------------------- close None (Microbone to Minibone) result=[(True, True)]
-action=close, ok=True, locked=[False]
-open () {'description': 'Microbone to Turbo'}
-open name=--- desc=Microbone to Turbo
-checking ownership. requestor=192.168.2.150
-check software interlocks U
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel False
-Open U ===>> OK
-GetIndicatorState U ===>> OK
-change switch state (True, True)
-22:37:20 -- OPEN   VALVE-U (Microbone to Turbo)
--------------------------- open None (Microbone to Turbo) result=[(True, True)]
-action=open, ok=True, locked=[False]
-open () {'description': 'Microbone to Inlet Pipette'}
-open name=--- desc=Microbone to Inlet Pipette
-checking ownership. requestor=192.168.2.150
-check software interlocks S
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel False
-Open S ===>> OK
-GetIndicatorState S ===>> OK
-change switch state (True, True)
-22:37:21 -- OPEN   VALVE-S (Microbone to Inlet Pipette)
--------------------------- open None (Microbone to Inlet Pipette) result=[(True, True)]
-action=open, ok=True, locked=[False]
-open () {'description': 'Microbone to Getter D-50'}
-open name=--- desc=Microbone to Getter D-50
-checking ownership. requestor=192.168.2.150
-check software interlocks K
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel False
-Open K ===>> OK
-GetIndicatorState K ===>> OK
-change switch state (True, True)
-22:37:22 -- OPEN   VALVE-K (Microbone to Getter D-50)
--------------------------- open None (Microbone to Getter D-50) result=[(True, True)]
-action=open, ok=True, locked=[False]
-open () {'description': 'Microbone to Getter NP-10'}
-open name=--- desc=Microbone to Getter NP-10
-checking ownership. requestor=192.168.2.150
-check software interlocks M
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel False
-Open M ===>> OK
-GetIndicatorState M ===>> OK
-change switch state (True, True)
-22:37:22 -- OPEN   VALVE-M (Microbone to Getter NP-10)
--------------------------- open None (Microbone to Getter NP-10) result=[(True, True)]
-action=open, ok=True, locked=[False]
-close () {'description': 'CO2 Laser to Felix'}
-close name=--- desc=CO2 Laser to Felix
-checking ownership. requestor=192.168.2.150
-check software interlocks F
-interlocks []
-actuate state mode=None-script, software_lock=True
-VALVE-F(CO2 Laser to Felix) software locked
-change switch state (True, False)
--------------------------- close None (CO2 Laser to Felix) result=[(True, False)]
-action=close, ok=True, locked=[True]
-open () {'description': 'CO2 Laser to Jan'}
-open name=--- desc=CO2 Laser to Jan
-checking ownership. requestor=192.168.2.150
-check software interlocks A
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel False
-Open A ===>> OK
-GetIndicatorState A ===>> OK
-change switch state (True, True)
-22:37:22 -- OPEN   VALVE-A (CO2 Laser to Jan)
--------------------------- open None (CO2 Laser to Jan) result=[(True, True)]
-action=open, ok=True, locked=[False]
-open () {'description': 'Microbone to CO2 Laser'}
-open name=--- desc=Microbone to CO2 Laser
-checking ownership. requestor=192.168.2.150
-check software interlocks T
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel False
-Open T ===>> OK
-GetIndicatorState T ===>> OK
-change switch state (True, True)
-22:37:23 -- OPEN   VALVE-T (Microbone to CO2 Laser)
--------------------------- open None (Microbone to CO2 Laser) result=[(True, True)]
-action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=4.94002103806
-PrepareForCO2Analysis.py completed successfully
-gosub finished
-set_motor ('beam', '') {}
-setting motor "beam" to 
-is blank. not heating
-close () {'description': 'Microbone to Turbo'}
-close name=--- desc=Microbone to Turbo
-checking ownership. requestor=192.168.2.150
-check software interlocks U
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script close_channel True
-Close U ===>> OK
-GetIndicatorState U ===>> False
-change switch state (True, True)
-22:37:24 -- CLOSE  VALVE-U (Microbone to Turbo)
--------------------------- close None (Microbone to Turbo) result=[(True, True)]
-action=close, ok=True, locked=[False]
-sleep (30.0,) {}
-SLEEP 30.0
-block started
-WaitControl setup for 30.0  
-Join finished
-block finished. duration 30.0719408989
-sleep (30.0,) {}
-SLEEP 30.0
-block started
-WaitControl setup for 30.0  
-Join finished
-block finished. duration 30.0643949509
-executed snippet estimated_duration=180.0, duration=65.552809
-jan_co2.py completed successfully
-GetAchievedOutput ===>> No Response
-Requested Output= 0.000
-Achieved Output=  0.000
-GetResponseBlob ===>> No Response
-GetOutputBlob ===>> No Response
-persistence save...
-persistence save - db
-AutomatedRunPersister post_extraction_save deprecated
-persistence save - dvc
-no extraction position for 
-not connected to db mysql://janexp@129.138.12.160/labspy
-Enviromentals: {'lab_humiditys': [{'device': 'EnvironmentalMonitor',
-                    'name': 'Lab Hum.',
-                    'pub_date': '2017-10-23T22:32:19',
-                    'title': 'iServer Hum.',
-                    'value': 24.8}],
- 'lab_pneumatics': [{'device': 'AirPressure',
-                     'name': 'Pressure',
-                     'pub_date': '2017-10-23T22:37:21',
-                     'title': None,
-                     'value': 88.2},
-                    {'device': 'AirPressure2',
-                     'name': 'Pressure2',
-                     'pub_date': '2017-10-23T22:37:26',
-                     'title': None,
-                     'value': 88.50556}],
- 'lab_temperatures': []}
-Extraction Finished
-22:39:02 -- ******* Extraction Finished *******
-no overlap. not waiting for min ms pumptime
-22:39:02 -- Sending spectrometer configuration
+no extraction script
+09:39:27 -- Sending spectrometer configuration
 ======== Sending configuration ========
 SetDeflection CDD,50.0 ===>> OK
 SetDeflection H2,0.0 ===>> OK
@@ -340,7 +87,7 @@ SetElectronEnergy 75.08 ===>> OK
 SetYSymmetry -2.81 ===>> OK
 SetIonCounterVoltage 1590.0 ===>> OK
 send trap current 200.0
-GetParameter Trap Current Readback ===>> 198.594579747299
+GetParameter Trap Current Readback ===>> 198.258926936459
 SetParameter Trap Current Set,200.0 ===>> OK
 updating mftable name mftable
 Using mftable located at /Users/jan/Pychron/setupfiles/spectrometer/mftables/mftable.csv
@@ -359,14 +106,14 @@ get initial guess parabolic
 ======== Configuration Finished ========
 GetYSymmetry ===>> -2.81
 GetZSymmetry ===>> -50.72
-GetParameter Trap Current Readback ===>> 198.035158395898
+GetParameter Trap Current Readback ===>> 198.147042666178
 GetHighVoltage ===>> 4500
 start measurement
 do measurement
 L#=bu-FC-J analysis type=blank_unknown
 Measurement Started jan_unknown400_120.py
-22:39:02 -- ******* Measurement Started jan_unknown400_120.py *******
-state changed from extraction to measurement
+09:39:27 -- ******* Measurement Started jan_unknown400_120.py *******
+state changed from not run to measurement
 setting trap, emission, spec, defl, and gains
 GetExtractionLens ===>> 26.13
 GetYSymmetry ===>> -2.81
@@ -385,13 +132,13 @@ GetGain L1 ===>> 0.010309
 GetGain L2 ===>> 0.091218
 GetGain CDD ===>> 0
 GetParameter Trap Current Readback ===>> 198.147042666178
-GetParameter Source Current Readback ===>> 553.388085210279
+GetParameter Source Current Readback ===>> 552.414881279375
 pre measurement save
-New frame /Users/jan/Pychron/data/isotopes/66/cf353e-5ad0-4a2b-b48a-12b0ee174a83.h5
-flush and close file /Users/jan/Pychron/data/isotopes/66/cf353e-5ad0-4a2b-b48a-12b0ee174a83.h5
+New frame /Users/jan/Pychron/data/isotopes/2f/282e75-2b70-4f9f-9eb5-77a3cc414db0.h5
+flush and close file /Users/jan/Pychron/data/isotopes/2f/282e75-2b70-4f9f-9eb5-77a3cc414db0.h5
 testing...
 no interpolation path defined
-executed snippet estimated_duration=552.28, duration=0.000202894210815
+executed snippet estimated_duration=555.4, duration=0.000298976898193
 unknown measurement script
 activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2', 'CDD') {}
 activate detectors
@@ -401,50 +148,83 @@ clearing graphs
 creating plots for detectors [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2), Detector(CDD)]
 clear isotope group
 setting isotope det=H2, iso=Ar40
+setting isotope det=H1, iso=Ar39
+setting isotope det=AX, iso=Ar38
+setting isotope det=L1, iso=Ar37
+setting isotope det=L2, iso=Ar36
+setting isotope det=CDD, iso=Ar35
+load analysis view
+position_magnet ('Ar40',) {'detector': 'H1'}
+detector Detector(H1)
+POSITION Ar40 H1
+molweights={'Ar41': 41.0, 'Ar40': 39.9624, 'Ar42': 42.0, 'Ar35': 35.0, 'Ar36': 35.9675, 'Ar37': 36.9668, 'Ar38': 37.9627, 'Ar39': 38.964}
+setting detector H2 to Ar41 (40.9624)
+setting detector H1 to Ar40 (39.9624)
+setting detector AX to Ar39 (38.9624)
+setting detector L1 to Ar38 (37.9624)
+setting detector L2 to Ar37 (36.9624)
+setting detector CDD to Ar36 (35.9624)
+Mapping mass to dac mass func: "parabolic"
+H1 map mass coeffs = [ -3.11428344e-04   1.33794662e-01   1.02988323e+00]
+H1 map mass to dac 39.9624 >> 5.87929
+GetDeflection H1 ===>> 0
+GetHighVoltage ===>> 4500
+positioning Ar40 (5.87929) on H1
+setting magnet DAC
+current  : 5.879290
+requested: 5.879290
+Delta Dac: 0.000000
+Checking detector protection. dv=0.00000
+Checking detector "CDD". Protection Threshold: 0.5 (V)
+AF Demag not enabled. self.use_af_demag=False, use_af_demag=False
+SetMagnetDAC 5.87929 ===>> OK
+set_dac. change=False
 _execute: Traceback (most recent call last):
   File "/Users/jan/.pychron.0/updates/pychron/pyscripts/pyscript.py", line 361, in execute_snippet
     func(*argv)
-  File "<string>", line 43, in main
+  File "<string>", line 53, in main
   File "/Users/jan/.pychron.0/updates/pychron/pyscripts/pyscript.py", line 88, in decorator
     return func(obj, *args, **kw)
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/measurement_pyscript.py", line 495, in activate_detectors
-    self._automated_run_call('py_activate_detectors', list(dets), peak_center=peak_center)
+  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/measurement_pyscript.py", line 516, in position_magnet
+    self._automated_run_call('py_position_magnet', pos, detector, use_dac=use_dac)
   File "/Users/jan/.pychron.0/updates/pychron/pyscripts/measurement_pyscript.py", line 905, in _automated_run_call
     return func(*args, **kw)
-  File "/Users/jan/.pychron.0/updates/pychron/experiment/automated_run/automated_run.py", line 282, in py_activate_detectors
-    self._activate_detectors(dets)
-  File "/Users/jan/.pychron.0/updates/pychron/experiment/automated_run/automated_run.py", line 1834, in _activate_detectors
-    for idx in self._get_plot_id_by_ytitle(g, d.isotope, '{}{}'.format(d.isotope, d.name)):
-TypeError: 'NoneType' object is not iterable
+  File "/Users/jan/.pychron.0/updates/pychron/experiment/automated_run/automated_run.py", line 269, in py_position_magnet
+    self._set_magnet_position(pos, detector, use_dac=use_dac)
+  File "/Users/jan/.pychron.0/updates/pychron/experiment/automated_run/automated_run.py", line 2110, in _set_magnet_position
+    for name, items in groupby(sorted(self.isotope_group.items(), key=key), key=key):
+  File "/Users/jan/.pychron.0/updates/pychron/processing/isotope_group.py", line 371, in __getattr__
+    raise AttributeError(attr)
+AttributeError: items
 
 Post Equilibration Started jan_pump_extraction_line.py
+09:39:28 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
 Post Measurement Started jan_pump_ms.py
-22:39:03 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
-22:39:03 -- ******* Post Measurement Started jan_pump_ms.py *******
-testing...
+09:39:28 -- ******* Post Measurement Started jan_pump_ms.py *******
 testing...
 no interpolation path defined
+testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=3.38554382324e-05
 calculate duration
+executed snippet estimated_duration=0, duration=3.09944152832e-05
+testing...
 Pumping spectrometer
-testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000177145004272
 open () {'name': 'O'}
-no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.00371289253235
 open name=O desc=---
-executed snippet estimated_duration=4.0, duration=0.000197887420654
-executed snippet estimated_duration=4.0, duration=0.00357604026794
 Pump after analysis
-checking ownership. requestor=192.168.2.150
 doing GOSUB
-check software interlocks O
-interlocks []
-actuate state mode=None-script, software_lock=False
+checking ownership. requestor=192.168.2.150
 testing...
-doing actuation None-script open_channel False
+check software interlocks O
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.000172853469849
+interlocks []
+executed snippet estimated_duration=4.0, duration=0.000264167785645
+actuate state mode=None-script, software_lock=False
 Pump Microbone
+doing actuation None-script open_channel False
 close () {'description': 'Jan Inlet'}
 close name=--- desc=Jan Inlet
 checking ownership. requestor=192.168.2.150
@@ -456,37 +236,46 @@ Open O ===>> OK
 Close R ===>> OK
 GetIndicatorState O ===>> OK
 change switch state (True, True)
-22:39:03 -- OPEN   VALVE-O (Jan Ion Pump)
+09:39:28 -- OPEN   VALVE-O (Jan Ion Pump)
 -------------------------- open O () result=[(True, True)]
 GetIndicatorState R ===>> False
 change switch state (True, True)
-22:39:03 -- CLOSE  VALVE-R (Jan Inlet)
+09:39:28 -- CLOSE  VALVE-R (Jan Inlet)
 -------------------------- close None (Jan Inlet) result=[(True, True)]
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x12c4dfb90>
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x1346b0650>"
+setting label 0 H2 Ar41
+setting label 1 H1 Ar40
+setting label 2 AX Ar39
+setting label 3 L1 Ar38
+setting label 4 L2 Ar37
+setting label 5 CDD Ar36
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x13467edd0>"
+setting label 0 H2 Ar41
+setting label 1 H1 Ar40
+setting label 2 AX Ar39
+setting label 3 L1 Ar38
+setting label 4 L2 Ar37
+setting label 5 CDD Ar36
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=0.693317890167
+executed snippet estimated_duration=0, duration=0.641117095947
 jan_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-22:39:03 -- ******* Post Measurement Finished *******
+09:39:28 -- ******* Post Measurement Finished *******
 ----------------- finish -----------------
 state changed from measurement to failed
 ----------------- stop -----------------
 Measurement Finished unsuccessfully. Aborted=False
-22:39:03 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
+09:39:28 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
 failed execution step Measurement Failed
 measurement did not complete successfully
-22:39:03 -- Automated run bu-FC-J-8549 failed duration: 108.210 s
+09:39:28 -- Automated run bu-FC-J-8549 failed duration: 4.678 s
 ----------------- finish -----------------
 ----------------- stop -----------------
 finish run. runs completed=1
 write rem/ex queues
 /Users/jan/Pychron/experiments/rem/Load1837nels.rem.txt
-action=close, ok=True, locked=[False]
-is_closed ('F',) {}
-is F () closed?
 /Users/jan/Pychron/experiments/rem/Load1837nels.ex.txt
-is closed True
-open () {'description': 'CO2 Laser to Jan'}
 doing event level: 3
-open name=--- desc=CO2 Laser to Jan
 add run
