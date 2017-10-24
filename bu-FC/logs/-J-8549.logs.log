@@ -5,7 +5,7 @@ loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=539.8, duration=0.000201940536499
+executed snippet estimated_duration=539.8, duration=0.000397205352783
 script duration name:unknown400_120 seconds:540.0
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
@@ -13,7 +13,7 @@ loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=3.21865081787e-05
+executed snippet estimated_duration=0, duration=2.88486480713e-05
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
 loading script "jan_co2.py"
@@ -23,12 +23,12 @@ no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=6.50882720947e-05
+executed snippet estimated_duration=0, duration=0.000102996826172
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=9.98973846436e-05
-executed snippet estimated_duration=0.0, duration=0.00262999534607
+executed snippet estimated_duration=0, duration=0.000135183334351
+executed snippet estimated_duration=0.0, duration=0.00308418273926
 script duration name:co2 seconds:0.0
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
@@ -39,13 +39,13 @@ no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.0001540184021
-executed snippet estimated_duration=4.0, duration=0.00147986412048
+executed snippet estimated_duration=4.0, duration=0.000160932540894
+executed snippet estimated_duration=4.0, duration=0.00161290168762
 Script duration 540.0
 Run total estimated duration= 541.000
 run duration: 0:09:01
 doing event level: 2
-21:50:58 -- Setting default integration. t=1.048576
+21:54:14 -- Setting default integration. t=1.048576
 setting integration time = 1.048576
 SetIntegrationTime 1.048576 ===>> OK
 ----------------- start -----------------
@@ -68,30 +68,30 @@ $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/jan/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-21:50:58 -- ******* Pre Extraction Check *******
+21:54:14 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.29473,0.06447,0.18321,-0.02018,0.04536,0.00237
-21:50:58 -- testing system defined conditionals
+Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.01237,0.04172,0.08729,-0.01465,0.04505,0.00208
+21:54:14 -- testing system defined conditionals
 Checking default pre extraction terminations n=2
 testing CDD
 evaluate ot="CDD.inactive" t="CDD", ctx="{'CDD': False}"
 GetDeflection CDD ===>> 50
 testing CDD==2000
 evaluate ot="CDD.deflection==2000" t="CDD==2000", ctx="{'CDD': 50.0}"
-21:50:58 -- ******* Pre Extraction Check Passed *******
+21:54:14 -- ******* Pre Extraction Check Passed *******
 =================================================================================
-21:50:58 -- stopping status monitor. block=True
+21:54:14 -- stopping status monitor. block=True
 stop 4946800080
 Status monitor stopped
 Status monitor finished
-21:50:59 -- starting status monitor
+21:54:16 -- starting status monitor
 start 4946800080
 StatusMonitor period=1. Frequencies(state=2, checksum=3, lock=5, owner=5)
 start extraction
 do extraction
-Analysis started at 21:51:01.481112
+Analysis started at 21:54:17.818710
 Extraction Started jan_co2.py
-21:51:01 -- ******* Extraction Started jan_co2.py *******
+21:54:17 -- ******* Extraction Started jan_co2.py *******
 state changed from not run to extraction
 DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x12deff710>
 testing...
@@ -99,17 +99,17 @@ no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=4.60147857666e-05
+executed snippet estimated_duration=0, duration=4.81605529785e-05
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=9.10758972168e-05
-executed snippet estimated_duration=120.0, duration=0.00205206871033
+executed snippet estimated_duration=0, duration=9.29832458496e-05
+executed snippet estimated_duration=120.0, duration=0.0019679069519
 Jan CO2 laser analysis
 doing GOSUB
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=3.60012054443e-05
+executed snippet estimated_duration=0, duration=0.00011420249939
 Waiting for CO2 access
 wait ('FelixCO2Flag', 0) {}
 waiting for FelixCO2Flag = 0
@@ -126,13 +126,13 @@ Set JanCO2Flag 1 ===>> OK
 JanCO2Flag acquired
 set extraction state False (0.75, 'red', 1.5)
 CO2 acquired
-executed snippet estimated_duration=0, duration=0.0181450843811
+executed snippet estimated_duration=0, duration=0.0167088508606
 WaitForCO2Access.py completed successfully
 gosub finished
 doing GOSUB
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=0.000169038772583
+executed snippet estimated_duration=0, duration=0.000133991241455
 Prepare for CO2 analysis
 close () {'description': 'Jan Inlet'}
 close name=--- desc=Jan Inlet
@@ -144,7 +144,7 @@ doing actuation None-script close_channel False
 Close R ===>> OK
 GetIndicatorState R ===>> False
 change switch state (True, True)
-21:51:01 -- CLOSE  VALVE-R (Jan Inlet)
+21:54:18 -- CLOSE  VALVE-R (Jan Inlet)
 -------------------------- close None (Jan Inlet) result=[(True, True)]
 action=close, ok=True, locked=[False]
 open () {'description': 'Jan Ion Pump'}
@@ -157,7 +157,7 @@ doing actuation None-script open_channel False
 Open O ===>> OK
 GetIndicatorState O ===>> OK
 change switch state (True, True)
-21:51:02 -- OPEN   VALVE-O (Jan Ion Pump)
+21:54:18 -- OPEN   VALVE-O (Jan Ion Pump)
 -------------------------- open None (Jan Ion Pump) result=[(True, True)]
 action=open, ok=True, locked=[False]
 close () {'description': 'Microbone to Minibone'}
@@ -170,7 +170,7 @@ doing actuation None-script close_channel False
 Close L ===>> OK
 GetIndicatorState L ===>> False
 change switch state (True, True)
-21:51:03 -- CLOSE  VALVE-L (Microbone to Minibone)
+21:54:19 -- CLOSE  VALVE-L (Microbone to Minibone)
 -------------------------- close None (Microbone to Minibone) result=[(True, True)]
 action=close, ok=True, locked=[False]
 open () {'description': 'Microbone to Turbo'}
@@ -183,7 +183,7 @@ doing actuation None-script open_channel False
 Open U ===>> OK
 GetIndicatorState U ===>> OK
 change switch state (True, True)
-21:51:03 -- OPEN   VALVE-U (Microbone to Turbo)
+21:54:19 -- OPEN   VALVE-U (Microbone to Turbo)
 -------------------------- open None (Microbone to Turbo) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Inlet Pipette'}
@@ -196,7 +196,7 @@ doing actuation None-script open_channel False
 Open S ===>> OK
 GetIndicatorState S ===>> OK
 change switch state (True, True)
-21:51:04 -- OPEN   VALVE-S (Microbone to Inlet Pipette)
+21:54:20 -- OPEN   VALVE-S (Microbone to Inlet Pipette)
 -------------------------- open None (Microbone to Inlet Pipette) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Getter D-50'}
@@ -209,7 +209,7 @@ doing actuation None-script open_channel False
 Open K ===>> OK
 GetIndicatorState K ===>> OK
 change switch state (True, True)
-21:51:04 -- OPEN   VALVE-K (Microbone to Getter D-50)
+21:54:21 -- OPEN   VALVE-K (Microbone to Getter D-50)
 -------------------------- open None (Microbone to Getter D-50) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Getter NP-10'}
@@ -222,7 +222,7 @@ doing actuation None-script open_channel False
 Open M ===>> OK
 GetIndicatorState M ===>> OK
 change switch state (True, True)
-21:51:05 -- OPEN   VALVE-M (Microbone to Getter NP-10)
+21:54:21 -- OPEN   VALVE-M (Microbone to Getter NP-10)
 -------------------------- open None (Microbone to Getter NP-10) result=[(True, True)]
 action=open, ok=True, locked=[False]
 close () {'description': 'CO2 Laser to Felix'}
@@ -245,7 +245,7 @@ doing actuation None-script open_channel False
 Open A ===>> OK
 GetIndicatorState A ===>> OK
 change switch state (True, True)
-21:51:05 -- OPEN   VALVE-A (CO2 Laser to Jan)
+21:54:21 -- OPEN   VALVE-A (CO2 Laser to Jan)
 -------------------------- open None (CO2 Laser to Jan) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to CO2 Laser'}
@@ -258,10 +258,10 @@ doing actuation None-script open_channel False
 Open T ===>> OK
 GetIndicatorState T ===>> OK
 change switch state (True, True)
-21:51:06 -- OPEN   VALVE-T (Microbone to CO2 Laser)
+21:54:22 -- OPEN   VALVE-T (Microbone to CO2 Laser)
 -------------------------- open None (Microbone to CO2 Laser) result=[(True, True)]
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=5.04651808739
+executed snippet estimated_duration=0, duration=5.00750994682
 PrepareForCO2Analysis.py completed successfully
 gosub finished
 set_motor ('beam', '') {}
@@ -277,7 +277,7 @@ doing actuation None-script close_channel True
 Close U ===>> OK
 GetIndicatorState U ===>> False
 change switch state (True, True)
-21:51:06 -- CLOSE  VALVE-U (Microbone to Turbo)
+21:54:23 -- CLOSE  VALVE-U (Microbone to Turbo)
 -------------------------- close None (Microbone to Turbo) result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (30.0,) {}
@@ -285,14 +285,14 @@ SLEEP 30.0
 block started
 WaitControl setup for 30.0  
 Join finished
-block finished. duration 30.0789010525
+block finished. duration 30.0312700272
 sleep (30.0,) {}
 SLEEP 30.0
 block started
 WaitControl setup for 30.0  
 Join finished
-block finished. duration 30.1009960175
-executed snippet estimated_duration=180.0, duration=65.6791241169
+block finished. duration 30.0435791016
+executed snippet estimated_duration=180.0, duration=65.5165231228
 jan_co2.py completed successfully
 GetAchievedOutput ===>> No Response
 Requested Output= 0.000
@@ -305,13 +305,6 @@ AutomatedRunPersister post_extraction_save deprecated
 persistence save - dvc
 no extraction position for 
 not connected to db mysql://janexp@129.138.12.160/labspy
-using pymysql
-5047941840 connecting to database mysql://janexp@129.138.12.160/labspy
-create new session 5047941840
-testing database connection get_migrate_version
-closing test session
-close session 5047941840
-connected to db mysql://janexp@129.138.12.160/labspy
 Enviromentals: {'lab_humiditys': [{'device': 'EnvironmentalMonitor',
                     'name': 'Lab Hum.',
                     'pub_date': '2017-10-23T21:16:27',
@@ -319,14 +312,14 @@ Enviromentals: {'lab_humiditys': [{'device': 'EnvironmentalMonitor',
                     'value': 24.5}],
  'lab_pneumatics': [{'device': 'AirPressure',
                      'name': 'Pressure',
-                     'pub_date': '2017-10-23T21:51:13',
+                     'pub_date': '2017-10-23T21:55:15',
                      'title': None,
-                     'value': 105.0},
+                     'value': 99.825},
                     {'device': 'AirPressure2',
                      'name': 'Pressure2',
-                     'pub_date': '2017-10-23T21:51:18',
+                     'pub_date': '2017-10-23T21:55:19',
                      'title': None,
-                     'value': 107.39638}],
+                     'value': 101.42236}],
  'lab_temperatures': [{'device': 'Coldfinger',
                        'name': 'ColdFinger Temp.',
                        'pub_date': '2017-10-23T21:16:27',
@@ -343,9 +336,9 @@ Enviromentals: {'lab_humiditys': [{'device': 'EnvironmentalMonitor',
                        'title': None,
                        'value': 18.0}]}
 Extraction Finished
-21:52:10 -- ******* Extraction Finished *******
+21:55:26 -- ******* Extraction Finished *******
 no overlap. not waiting for min ms pumptime
-21:52:10 -- Sending spectrometer configuration
+21:55:26 -- Sending spectrometer configuration
 ======== Sending configuration ========
 SetDeflection CDD,50.0 ===>> OK
 SetDeflection H2,0.0 ===>> OK
@@ -361,7 +354,7 @@ SetElectronEnergy 75.08 ===>> OK
 SetYSymmetry -2.81 ===>> OK
 SetIonCounterVoltage 1590.0 ===>> OK
 send trap current 200.0
-GetParameter Trap Current Readback ===>> 198.035158395898
+GetParameter Trap Current Readback ===>> 198.258926936459
 SetParameter Trap Current Set,200.0 ===>> OK
 updating mftable name mftable
 Using mftable located at /Users/jan/Pychron/setupfiles/spectrometer/mftables/mftable.csv
@@ -380,13 +373,13 @@ get initial guess parabolic
 ======== Configuration Finished ========
 GetYSymmetry ===>> -2.81
 GetZSymmetry ===>> -50.72
-GetParameter Trap Current Readback ===>> 198.147042666178
+GetParameter Trap Current Readback ===>> 198.482695477019
 GetHighVoltage ===>> 4500
 start measurement
 do measurement
 L#=bu-FC-J analysis type=blank_unknown
 Measurement Started jan_unknown400_120.py
-21:52:10 -- ******* Measurement Started jan_unknown400_120.py *******
+21:55:26 -- ******* Measurement Started jan_unknown400_120.py *******
 state changed from extraction to measurement
 setting trap, emission, spec, defl, and gains
 GetExtractionLens ===>> 26.13
@@ -405,14 +398,14 @@ GetGain AX ===>> 0.09645
 GetGain L1 ===>> 0.010309
 GetGain L2 ===>> 0.091218
 GetGain CDD ===>> 0
-GetParameter Trap Current Readback ===>> 197.923274125618
-GetParameter Source Current Readback ===>> 554.23963864982
+GetParameter Trap Current Readback ===>> 198.035158395898
+GetParameter Source Current Readback ===>> 553.02313373619
 pre measurement save
-New frame /Users/jan/Pychron/data/isotopes/31/33678b-2ec7-4d59-9749-568d1d12318a.h5
-flush and close file /Users/jan/Pychron/data/isotopes/31/33678b-2ec7-4d59-9749-568d1d12318a.h5
+New frame /Users/jan/Pychron/data/isotopes/7a/9f1342-1cb1-4808-8e3b-3b8fcc20ee5f.h5
+flush and close file /Users/jan/Pychron/data/isotopes/7a/9f1342-1cb1-4808-8e3b-3b8fcc20ee5f.h5
 testing...
 no interpolation path defined
-executed snippet estimated_duration=552.28, duration=0.000207901000977
+executed snippet estimated_duration=552.28, duration=0.000351190567017
 unknown measurement script
 activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2', 'CDD') {}
 activate detectors
@@ -440,21 +433,21 @@ TypeError: 'NoneType' object is not iterable
 
 Post Equilibration Started jan_pump_extraction_line.py
 Post Measurement Started jan_pump_ms.py
-21:52:11 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
-21:52:11 -- ******* Post Measurement Started jan_pump_ms.py *******
+21:55:27 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
+21:55:27 -- ******* Post Measurement Started jan_pump_ms.py *******
 testing...
 testing...
 no interpolation path defined
 no interpolation path defined
-calculate duration
-executed snippet estimated_duration=0, duration=3.00407409668e-05
-testing...
+executed snippet estimated_duration=0, duration=3.21865081787e-05
 Pumping spectrometer
+calculate duration
+testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.000243902206421
 open () {'name': 'O'}
-executed snippet estimated_duration=4.0, duration=0.00376605987549
+executed snippet estimated_duration=4.0, duration=0.000171899795532
 open name=O desc=---
+executed snippet estimated_duration=4.0, duration=0.00305509567261
 Pump after analysis
 doing GOSUB
 checking ownership. requestor=192.168.2.150
@@ -463,7 +456,7 @@ testing...
 interlocks []
 no interpolation path defined
 actuate state mode=None-script, software_lock=False
-executed snippet estimated_duration=4.0, duration=0.000237941741943
+executed snippet estimated_duration=4.0, duration=0.000175952911377
 doing actuation None-script open_channel False
 Pump Microbone
 close () {'description': 'Jan Inlet'}
@@ -477,38 +470,31 @@ Open O ===>> OK
 Close R ===>> OK
 GetIndicatorState O ===>> OK
 change switch state (True, True)
-21:52:11 -- OPEN   VALVE-O (Jan Ion Pump)
+21:55:27 -- OPEN   VALVE-O (Jan Ion Pump)
 -------------------------- open O () result=[(True, True)]
 GetIndicatorState R ===>> False
 change switch state (True, True)
-21:52:11 -- CLOSE  VALVE-R (Jan Inlet)
+21:55:27 -- CLOSE  VALVE-R (Jan Inlet)
 -------------------------- close None (Jan Inlet) result=[(True, True)]
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=0.676598072052
+executed snippet estimated_duration=0, duration=0.680839061737
 jan_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-21:52:11 -- ******* Post Measurement Finished *******
+21:55:27 -- ******* Post Measurement Finished *******
 ----------------- finish -----------------
 state changed from measurement to failed
 ----------------- stop -----------------
 Measurement Finished unsuccessfully. Aborted=False
-21:52:11 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
+21:55:27 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
 failed execution step Measurement Failed
 measurement did not complete successfully
-21:52:11 -- Automated run bu-FC-J-8549 failed duration: 73.693 s
+21:55:27 -- Automated run bu-FC-J-8549 failed duration: 73.122 s
 ----------------- finish -----------------
 ----------------- stop -----------------
 finish run. runs completed=1
 write rem/ex queues
 /Users/jan/Pychron/experiments/rem/Load1837nels.rem.txt
-action=close, ok=True, locked=[False]
-is_closed ('F',) {}
-is F () closed?
-is closed True
-open () {'description': 'CO2 Laser to Jan'}
 /Users/jan/Pychron/experiments/rem/Load1837nels.ex.txt
-open name=--- desc=CO2 Laser to Jan
 doing event level: 3
 add run
-checking ownership. requestor=192.168.2.150
