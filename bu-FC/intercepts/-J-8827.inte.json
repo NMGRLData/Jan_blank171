@@ -1,88 +1,88 @@
 {
     "Ar36": {
-        "error": 0.00023612802358959092, 
-        "error_type": "SEM", 
+        "error": 0.00023612802358959092,
+        "error_type": "SEM",
         "filter_outliers_dict": {
-            "filter_outliers": true, 
-            "iterations": 1, 
+            "filter_outliers": true,
+            "iterations": 1,
             "std_devs": 2
-        }, 
-        "fit": "Parabolic", 
-        "fn": 384, 
-        "include_baseline_error": false, 
-        "n": 400, 
-        "reviewed": true, 
+        },
+        "fit": "Parabolic",
+        "fn": 384,
+        "include_baseline_error": false,
+        "n": 400,
+        "reviewed": true,
         "value": 0.013077233865864913
-    }, 
+    },
     "Ar37": {
-        "error": 0.004426316917903514, 
-        "error_type": "SEM", 
+        "error": 0.0071668036522158154,
+        "error_type": "SEM",
         "filter_outliers_dict": {
-            "filter_outliers": true, 
-            "iterations": 1, 
+            "filter_outliers": true,
+            "iterations": 1,
             "std_devs": 2
-        }, 
-        "fit": "Linear", 
-        "fn": 385, 
-        "include_baseline_error": false, 
-        "n": 400, 
-        "reviewed": true, 
-        "value": -0.00551228240216191
-    }, 
+        },
+        "fit": "Parabolic",
+        "fn": 385,
+        "include_baseline_error": false,
+        "n": 400,
+        "reviewed": true,
+        "value": 0.009062666122212048
+    },
     "Ar38": {
-        "error": 0.0023306011456701923, 
-        "error_type": "SEM", 
+        "error": 0.002330601145670192,
+        "error_type": "SEM",
         "filter_outliers_dict": {
-            "filter_outliers": true, 
-            "iterations": 1, 
+            "filter_outliers": true,
+            "iterations": 1,
             "std_devs": 2
-        }, 
-        "fit": "Linear", 
-        "fn": 383, 
-        "include_baseline_error": false, 
-        "n": 400, 
-        "reviewed": true, 
+        },
+        "fit": "Linear",
+        "fn": 383,
+        "include_baseline_error": false,
+        "n": 400,
+        "reviewed": true,
         "value": -0.025358427856959305
-    }, 
+    },
     "Ar39": {
-        "error": 0.009464313825631898, 
-        "error_type": "SEM", 
+        "error": 0.005817556341833018,
+        "error_type": "SEM",
         "filter_outliers_dict": {
-            "filter_outliers": true, 
-            "iterations": 1, 
+            "filter_outliers": true,
+            "iterations": 1,
             "std_devs": 2
-        }, 
-        "fit": "Parabolic", 
-        "fn": 387, 
-        "include_baseline_error": false, 
-        "n": 400, 
-        "reviewed": true, 
-        "value": 0.0365741270759603
-    }, 
+        },
+        "fit": "Linear",
+        "fn": 387,
+        "include_baseline_error": false,
+        "n": 400,
+        "reviewed": true,
+        "value": 0.033831062529623916
+    },
     "Ar40": {
-        "error": 0.00768955396792163, 
-        "error_type": "SEM", 
+        "error": 0.00768955396792163,
+        "error_type": "SEM",
         "filter_outliers_dict": {
-            "filter_outliers": true, 
-            "iterations": 1, 
+            "filter_outliers": true,
+            "iterations": 1,
             "std_devs": 2
-        }, 
-        "fit": "Parabolic", 
-        "fn": 385, 
-        "include_baseline_error": false, 
-        "n": 400, 
-        "reviewed": true, 
+        },
+        "fit": "Parabolic",
+        "fn": 385,
+        "include_baseline_error": false,
+        "n": 400,
+        "reviewed": true,
         "value": 3.268688955576172
-    }, 
+    },
     "Ar41": {
-        "error": 0.0108161177, 
-        "error_type": "SEM", 
+        "error": 0.0108161177,
+        "error_type": "SEM",
         "filter_outliers_dict": {
-            "filter_outliers": true, 
-            "iterations": 1, 
+            "filter_outliers": true,
+            "iterations": 1,
             "std_devs": 2
-        }, 
-        "fit": "linear", 
+        },
+        "fit": "linear",
         "value": 0.0657827264
     }
 }
