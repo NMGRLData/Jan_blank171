@@ -1,8 +1,8 @@
 {
     "AX": {
-        "error": 0.00886648056067408,
+        "error": 0.008512693492966036,
         "filter_outliers_dict": {
-            "filter_outliers": false,
+            "filter_outliers": true,
             "iterations": 1,
             "std_devs": 2
         },
@@ -11,12 +11,12 @@
         "include_baseline_error": false,
         "n": 33,
         "reviewed": true,
-        "value": -0.02991379081680806
+        "value": -0.03316038947014022
     },
     "CDD": {
         "error": 8.55880804498505e-06,
         "filter_outliers_dict": {
-            "filter_outliers": false,
+            "filter_outliers": true,
             "iterations": 1,
             "std_devs": 10
         },
@@ -28,9 +28,9 @@
         "value": 1.798122486268932e-05
     },
     "H1": {
-        "error": 0.006691734498232581,
+        "error": 0.0056424574629066505,
         "filter_outliers_dict": {
-            "filter_outliers": false,
+            "filter_outliers": true,
             "iterations": 1,
             "std_devs": 2
         },
@@ -39,7 +39,7 @@
         "include_baseline_error": false,
         "n": 33,
         "reviewed": true,
-        "value": 0.08033412903773063
+        "value": 0.07445826771999559
     },
     "H2": {
         "error": 0.005665284327367393,
@@ -54,7 +54,7 @@
     "L1": {
         "error": 0.0038451360637760277,
         "filter_outliers_dict": {
-            "filter_outliers": false,
+            "filter_outliers": true,
             "iterations": 1,
             "std_devs": 2
         },
@@ -66,9 +66,9 @@
         "value": -0.028775412977362674
     },
     "L2": {
-        "error": 0.008006563305457308,
+        "error": 0.0076803441585418806,
         "filter_outliers_dict": {
-            "filter_outliers": false,
+            "filter_outliers": true,
             "iterations": 1,
             "std_devs": 2
         },
@@ -77,6 +77,6 @@
         "include_baseline_error": false,
         "n": 33,
         "reviewed": true,
-        "value": -0.006657682739552745
+        "value": -0.009605967133438753
     }
 }
